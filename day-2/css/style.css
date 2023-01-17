@@ -1,0 +1,65 @@
+body {
+  background-color: #f4f4f4;
+  background: url(/day-2/img/agata-ciosek-CyxrqDV67eU-unsplash.jpg) no-repeat center center/cover;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  /* height: 100vh; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* object-fit: cover; */
+  /* background-size: auto/contain/cover are the options */
+  background-position: ;
+}
+
+.heading {
+  text-align: center;
+  color: aquamarine;
+}
+
+.p1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* Imported Merriweather font from google */
+.p2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+}
+
+/* stick with the long land as the short hand isn't good */
+.p3 {
+  font: oblique bold 1rem Georgia;
+}
+
+.div1 {
+  height: 300px;
+  width: 300px;
+  background-image: url(/day-2/img/cat_dog.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  background-position: center;
+}
+
+.div2 {
+  height: 300px;
+  width: 300px;
+  background-image: url(/day-2/img/greg-rosenke-7QS8pdlkgog-unsplash.jpg);
+  background-size: 300px 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+}
+
+.div3 {
+  height: 300px;
+  width: 300px;
+  background: url(/day-2/img/oguzhan-edman-ISIufLSIdQI-unsplash.jpg) no-repeat center center/cover;
+  /* background-repeat: no-repeat; */
+}
