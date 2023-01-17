@@ -1,0 +1,61 @@
+body {
+  background-color: #ccc;
+}
+
+/* ID has more importance than elements and class */
+/* #test-id {
+  color: orange;
+}
+
+.heading-2 {
+  background-color: green;
+}
+
+.paragraph {
+  color: blue;
+}
+
+p {
+  color: green;
+}
+
+.test-class {
+  color: Yellow;
+} */
+
+.rgb {
+  color: rgb(97, 122, 152);
+}
+
+.rgba {
+  color: rgba(97, 122, 152, 0.4);
+}
+
+.hex {
+  color: blueviolet;
+}
+
+.colour {
+  color: red;
+}
+
+.colour-1 {
+  color: blue;
+}
+
+.hsl {
+  color: hsl(215, 100%, 50%);
+}
+
+.hsla {
+  color: hsla(215, 100%, 50%, 0.50);
+}
+
+
+.container {
+  border: 5px solid black;
+  text-align: center;
+  /* margin-top: 50px; */
+  margin: 50px auto 0;
+  max-width: 50%;
+}
