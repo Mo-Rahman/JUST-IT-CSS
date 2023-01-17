@@ -10,7 +10,7 @@ body {
   /* background-position: center; */
   /* object-fit: cover; */
   /* background-size: auto/contain/cover are the options */
-  background-position: ;
+  /* background-position: ; */
   position: relative;
 }
 
@@ -31,6 +31,8 @@ body::before {
 .heading {
   text-align: center;
   color: aquamarine;
+  padding: 20px;
+  margin: 50px;
 }
 
 .p1 {
@@ -85,7 +87,7 @@ body::before {
   height: 500px;
   width: 500px;
   background: url(/day-2/img/oguzhan-edman-ISIufLSIdQI-unsplash.jpg) no-repeat center center/cover;
-  /* background-repeat: no-repeat; */
+  background-size: 500px 500px;
 }
 
 .div3 {
@@ -93,9 +95,9 @@ body::before {
   border: 5px solid black;
   border-style: double solid;
   border-color: #f4f4f4;
-  border-top: black solid 5px;
+  /* border-top: black solid 10px; */
   border-width: 10px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .img-1 {
@@ -115,4 +117,20 @@ body::before {
   width: 500px;
   border-radius: 50%;
   margin: auto;
+}
+
+.div100 {
+  height: 400px;
+  width: 400px;
+  background-image: url(/day-2/img/oguzhan-edman-ISIufLSIdQI-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  /* background-color: blue; */
+  /* border: 2px solid black; */
+  border-top: yellow dotted 5px;
+  border-bottom: 5px solid yellow;
+  border-left: 10px blue solid;
+  margin: 50px auto 100px;
+  padding: 20px;
 }
