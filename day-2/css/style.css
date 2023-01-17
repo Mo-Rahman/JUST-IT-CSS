@@ -33,6 +33,7 @@ body::before {
   color: aquamarine;
   padding: 20px;
   margin: 50px;
+  border: 1px solid #ccc;
 }
 
 .p1 {
