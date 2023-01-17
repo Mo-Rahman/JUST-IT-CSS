@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   background-color: #f4f4f4;
   background: url(/day-2/img/agata-ciosek-CyxrqDV67eU-unsplash.jpg) no-repeat center center/cover;
@@ -9,7 +11,22 @@ body {
   /* object-fit: cover; */
   /* background-size: auto/contain/cover are the options */
   background-position: ;
+  position: relative;
 }
+
+/* .hero-image {
+  
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+} */
 
 .heading {
   text-align: center;
@@ -32,7 +49,8 @@ body {
 
 /* stick with the long land as the short hand isn't good */
 .p3 {
-  font: oblique bold 1rem Georgia;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
 }
 
 .div1 {
