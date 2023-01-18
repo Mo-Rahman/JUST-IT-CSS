@@ -1,0 +1,52 @@
+body {
+  background-color: #ccc;
+}
+
+.container {
+  background-color: lightblue;
+  margin: 50px auto 25px;
+  border: 1px solid black;
+  padding: 20px 20px;
+  max-width: 500px;
+}
+
+.container label {
+  display: block;
+  color: #666;
+}
+
+.container input {
+  width: 95%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+.container h1,
+.container p {
+  color: #666;
+  font-weight: 600;
+}
+
+.bottom-text {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.bottom-text a {
+  text-decoration: none;
+}
+
+.container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #49c1a2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background: #37a08e;
+}
