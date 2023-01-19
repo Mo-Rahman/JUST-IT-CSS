@@ -1,3 +1,82 @@
-body {
+/* body {
+  background-color: #f4f4f4;
+}
+
+.one,
+.two,
+.three {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+
+.one {
   background-color: red;
+}
+
+.two {
+  background-color: blue;
+  position: absolute;
+  z-index: -1;
+}
+
+.three {
+  background-color: yellow;
+  z-index: 1;
+} */
+
+/* Navbar */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav {
+  background-color: #ccc;
+  position: sticky;
+  top: 0
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.container ul a {
+  margin: 10px;
+  padding: 8px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.container ul a:hover {
+  background-color: lightblue;
+  color: black;
+  font-size: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: black;
+}
+
+.heading-1 {
+  padding: 10px 0;
+  text-align: center;
+  background-color: lightblue;
 }
