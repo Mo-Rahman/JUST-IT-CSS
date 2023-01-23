@@ -1,0 +1,153 @@
+/* local and global variables */
+
+/* The root element is the Global variable */
+:root {
+  --primary-colour: black;
+  --secondary-colour: red;
+  --green-colour: green;
+  --blue-colour: blue;
+  --lightblue-colour: lightblue;
+  --max-width: 1100px;
+  --bg-dark: #333;
+  --bg-light: #f4f4f4;
+}
+
+/* Using the variable  */
+body {
+  background-color: #f4f4f4;
+}
+
+/* Local variable */
+
+.p1 {
+  --text-size: 2rem
+}
+
+/* The --text-size can only be used inside the .p1 and isn't available in any other element */
+
+.p1 {
+  font-size: var(--text-size);
+}
+
+/* The text size isn't available for the .p2 class below - you can add it but it won't take effect */
+
+.p2 {
+  font-size: var(--text-size);
+}
+
+/* CSS animations */
+
+.animation {
+  height: 200px;
+  width: 100px;
+  background-color: var(--secondary-colour);
+  animation: animatePractice 2s 1s 2;
+  margin-top: 2rem;
+}
+
+@keyframes animatePractice {
+  from {
+    background-color: blue;
+  }
+
+  to {
+    background-color: black;
+  }
+}
+
+/* Task 1 & 2 Combined */
+
+.animation2 {
+  background: white;
+  width: 200px;
+  height: 200px;
+  margin-top: 2rem;
+  position: relative;
+  animation-name: animate2;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-in-out; */
+}
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+@keyframes animate2 {
+  0% {
+    left: 0px;
+    top: 0px;
+    /* background-color: white; */
+    border-radius: 0 0 0 0;
+  }
+
+  25% {
+    left: 300px;
+    top: 0px;
+    background-color: var(--secondary-colour);
+    border-radius: 50% 0 0 0;
+  }
+
+  50% {
+    left: 300px;
+    top: 300px;
+    background-color: var(--green-colour);
+    border-radius: 50% 50% 0 0;
+  }
+
+  75% {
+    left: 0px;
+    top: 300px;
+    background-color: var(--blue-colour);
+    border-radius: 50% 50% 50% 0;
+  }
+
+  99% {
+    left: 0px;
+    top: 0px;
+    /* background-color: white; */
+    border-radius: 50% 50% 50% 50%;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: var(--lightblue-colour);
+    border-radius: 0 0 0 0;
+  }
+}
+
+/* CSS Transition */
+
+.transition {
+  background: var(--green-colour);
+  width: 200px;
+  height: 200px;
+
+  /* transition-property: background, border-radius height width */
+  /* transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in; */
+  transition-delay: 2s, 2s;
+
+  /* Shorthand - property/duration/timing-function/delay */
+  transition: all 2s ease-in-out;
+  margin-left: 500px;
+}
+
+.transition:hover {
+  background: red;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+/* Task 3 Animation properties */
+
+/* Move a div/picture in a T shape */
+
+/* Task 4 - Transition properties */
+
+/* Create a button and change the height, width and background using transitions */
