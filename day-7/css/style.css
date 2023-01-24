@@ -1,0 +1,22 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  /* flex-direction: row; */
+  /* consider using flex wrap for images */
+  /* flex-wrap: wrap; */
+}
+
+
+/* flex-froggy-24 */
+
+/* flex-flow: column-reverse wrap-reverse;
+justify-content: center;
+align-content: space-between; */
+
+/* second solution */
+
+/* flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-content: space-between; */
