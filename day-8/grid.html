@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Day 8 | Grid task </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      /* background-color: darkgray; */
+      /* min-height: 100%; */
+      display: grid;
+      grid-template-areas:
+        'header header header'
+        'menu main-2 right'
+        'menu footer footer';
+      /* grid-template-rows: 100px 300px auto 50px; */
+      grid-template-rows: 100px auto 100px;
+      grid-template-columns: 20% 50% 30%;
+    }
+
+    .grid-container div {
+      border: 1px solid black;
+    }
+
+    .grid-container>div {
+      text-align: center;
+      /* align-items: center; */
+    }
+
+    .header {
+      background-color: aqua;
+      grid-area: header;
+    }
+
+    .menu {
+      background-color: lightcoral;
+      grid-area: menu;
+    }
+
+    .main-2 {
+      background-color: lightcoral;
+      grid-area: main-2;
+    }
+
+    .right {
+      background-color: lightblue;
+      grid-area: right;
+    }
+
+    .footer {
+      background-color: lightblue;
+      grid-area: footer;
+    }
+
+    .div-1 {
+      transform: translate(40px, 0px);
+    }
+
+    .div-2 {
+      transform: skewx(20deg);
+    }
+
+    .div-3 {
+      /* transform: rotate(70deg); */
+      transition: transform 2s;
+    }
+
+    .div-3:hover {
+      transform: rotate(180deg);
+    }
+
+    /* img {
+      width: 100%;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="main-2">
+      <div class="div-1">
+        <img src="img/cat_dog.jpg" height="100px" width="100px" alt="">
+      </div>
+      <div class="div-2">
+        <img src=" img/mountain.jpg" height="100px" width="100px" alt="">
+      </div>
+      <div class="div-3"><img src="img/running-man.jpg" height="100px" width="100px" alt="">
+      </div>
+    </div>
+    <div class="right">Right</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>

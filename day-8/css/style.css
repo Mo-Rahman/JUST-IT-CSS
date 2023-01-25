@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  background-color: darkgray;
+  /* min-height: 100%; */
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'nav nav nav '
+    'hero-pic hero-pic hero-pic'
+    'content content v-nav'
+    'footer footer footer';
+  grid-template-rows: 100px 50px 300px auto 100px;
+  grid-template-columns: 35% 35% 30%;
+}
+
+.grid-container div {
+  border: 1px solid black;
+}
+
+.header {
+  background-color: aqua;
+  grid-area: header;
+}
+
+.nav {
+  background-color: lightcoral;
+  grid-area: nav;
+}
+
+.hero-pic {
+  background-color: lightcoral;
+  grid-area: hero-pic;
+}
+
+.vertical-nav {
+  background-color: yellow;
+  grid-area: v-nav;
+}
+
+.content {
+  background-color: lightblue;
+  grid-area: content;
+}
+
+.footer {
+  background-color: lightblue;
+  grid-area: footer;
+}
+
+
+
+.div-1,
+.div-2,
+.div-3 {
+  margin: 20px;
+  height: 100px;
+  background-color: #ccc;
+}
+
+/* CSS Transform - To rotate / scale an element */
+
+/* Translate moves */
+.div-1 {
+  transform: translate(50px, 50px);
+}
+
+/* Rotate */
+.div-2 {
+  transform: rotate(70deg);
+  transition: transform 5s;
+}
+
+.div-2:hover {
+  transform: rotate(300deg);
+}
+
+.div-3 {
+  transform: skewx(10deg);
+}
+
+/* .div-3 {
+  transform: scale(0.5);
+} */
+
+.div-1 {
+  transform: skew(20deg, 5deg);
+}
