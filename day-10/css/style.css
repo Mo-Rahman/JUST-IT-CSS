@@ -1,0 +1,27 @@
+/* img {
+  width: 100%;
+} */
+
+.container-fluid {
+  padding: 0 10% 0 10%;
+}
+
+#carousel {
+  background-color: pink;
+  text-align: center;
+
+}
+
+.carousel-item {
+  padding: 5% 15%;
+}
+
+#carousel .test-carousel {
+  width: 40%;
+  margin: auto;
+}
+
+/* .carousel-inner>.item>img {
+  width: 100px;
+  height: 100px object-fit: contain;
+} */
